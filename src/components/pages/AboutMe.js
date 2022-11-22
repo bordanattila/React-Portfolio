@@ -1,9 +1,18 @@
 import React from "react";
+import ProfilePicture from "../images/profilepicture.jpg";
+import "../styles/AboutMe.css"
+
+const styles = {
+    ProfilePictureStyle: {
+        borderRadius: "100%"
+    }
+}
 
 export default function AboutMe() {
     return (
 
-        <div>
+        <div className="container-fluid">
+            <img className="profile_img" style={styles.ProfilePictureStyle} src={ProfilePicture} alt={"Profile picture"}></img>
             <p>My name is Attila. It is a common name in Hungary where I came from. I currently reside and work in Virginia in the United States
                 I earned my Master's degree from the Florida Institute of Technology in Supply Chain Management. I am working in this field which is very enjoyable.
                 However, it can become very tedious and frustrating when the right tools are not available.
