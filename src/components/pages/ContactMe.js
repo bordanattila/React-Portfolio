@@ -51,6 +51,8 @@ function ContactMe() {
             return;
         }
     }
+
+    // Check to see if all required fields are filled out
     const submitHandler = (e) => {
         e.preventDefault();
         if (visitorName === "") {
@@ -69,15 +71,20 @@ function ContactMe() {
             setAlertMessage("Message is a required field");
             return;
         }
+        if (!validateEmail) {
+            setAlertMessage("The email address you entered does not appear to be valid");
+            return;
+        }
     };
 
+    // Regex to validate email input
     function validateEmail(email) {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     };
 
     return (
-        <div className="mb-3 container-fluid">
+        <div className="mb-3 container">
             <form className="messageForm">
                 <input
                     className="form-control container-sm container-md"
@@ -90,7 +97,7 @@ function ContactMe() {
                 /></form>
             <form className="messageForm">
                 <input
-                    className="form-control container-sm"
+                    className="form-control container-sm container-md"
                     value={email}
                     name="email"
                     onChange={inputHandler}
@@ -100,6 +107,7 @@ function ContactMe() {
                 /></form>
             <form className="messageForm">
                 <input
+                    className="form-control container-sm container-md"
                     value={address}
                     name="address"
                     onChange={inputHandler}
@@ -109,6 +117,7 @@ function ContactMe() {
                 /></form>
             <form className="messageForm">
                 <input
+                    className="form-control container-sm container-md"
                     value={message}
                     name="message"
                     onChange={inputHandler}
@@ -116,7 +125,9 @@ function ContactMe() {
                     type="text"
                     placeholder="Your message"
                 /></form>
-            <button type="button" onClick={submitHandler}>
+            <button type="button"
+                className="btn btn-success"
+                onClick={submitHandler}>
                 Submit
             </button>
             {alertMessage && (

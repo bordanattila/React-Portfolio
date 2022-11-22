@@ -1,34 +1,30 @@
 import React from "react";
 import "./styles/Navigation.css";
-// const styles = {
-//     headerStyle {
-//         padding: "20px"
-//         display: "flex"
-//         flexWrap: "wrap"
-//         justifyContent: "space-evenly"
-//         alignItems: "center"
-//     }
-// }
 
-function Navbar({currentPage, handlePageChange}) {
+import { Nav, Navbar } from "react-bootstrap";
+
+function NavigationBar({currentPage, handlePageChange}) {
     return (
-        <div className="header">
-            
-            <h1 className="test">Attila Bordán</h1>
-            <nav className="navbar">
-                <a href="#AboutMe"
+         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+         <Navbar.Brand >           
+         Attila Bordán
+         </Navbar.Brand>
+         <Navbar.Toggle aria-controls="responsive-navbar-nav" data-target="#navbarRightAlignExample"/>
+         <Navbar.Collapse id="responsive-navbar-nav">
+           <Nav className="ms-auto">
+             <Nav.Link href="#AboutMe"
                  onClick={() => handlePageChange("AboutMe")}
                  className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}
-                 >About me</a>
-                <a href="#Portfolio">Portfolio</a>
-                <a href="#ContactMe"
+                 >About me</Nav.Link>
+             <Nav.Link href="#ContactMe"
                  onClick={() => handlePageChange("ContactMe")}
                  className={currentPage === "ContactMe" ? "nav-link active" : "nav-link"}
-                 >Contact me</a>
-                <a href="#Resume">Resume</a>
-            </nav>
-        </div>
+                 >Contact me</Nav.Link>
+             
+           </Nav>
+         </Navbar.Collapse>
+       </Navbar>
     );
 }
 
-export default Navbar;
+export default NavigationBar;
