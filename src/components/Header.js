@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navigation from "./Navigation";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
@@ -7,7 +7,7 @@ import Resume from "./pages/Resume";
 
 function Header() {
     // set currentPage state to AboutMe to start with
-    const [currentPage, setCurrentpage] = useState("AboutMe");
+    const [currentPage, setCurrentPage] = useState("AboutMe");
 
     // render page based on user click
     const renderPage = () => {
@@ -23,10 +23,11 @@ function Header() {
         if (currentPage === "Resume") {
             return <Resume />;
         }
+        return <AboutMe />
     };
 
     // set current page to the one that is clicked on
-    const handlePageChange = (page) => setCurrentpage(page);
+    const handlePageChange = (page) => setCurrentPage(page);
 
     // passing currentPage and handlePagechange as props to Navigation
     return (
