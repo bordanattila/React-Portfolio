@@ -1,0 +1,18 @@
+.project_img {
+    width: 400px;
+    height: 320px;
+}
+.project {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right:5%;
+    justify-content: center;
+}
+
+.project-card {
+    padding: 10px;
+}
