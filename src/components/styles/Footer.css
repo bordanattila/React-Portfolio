@@ -1,4 +1,24 @@
+a {
+    padding: 5px;
+}
+
+.footer {
+    text-align: center;
+    min-height: 5rem;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+span {
+    color: white;
+}
+
 .contact_img {
     height: 40px;
     width: 40px;
+    color: white;
+    padding: 1px;
+    border: white 1px solid;
 }

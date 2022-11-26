@@ -9,7 +9,11 @@
 
 .navbar-brand {
     font-family: "Caveat", cursive, serif;
-    font-size: 70px;
+    font-size: 2.6rem !important;
     padding-left: 75px;
-    color: aquamarine;
+}
+
+.navbar-nav {
+    align-items: flex-end;    
+    padding-right: 10px;
 }

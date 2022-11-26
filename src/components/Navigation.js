@@ -11,7 +11,7 @@ function NavigationBar({ currentPage, handlePageChange }) {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" data-target="#navbarRightAlignExample" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ms-auto">
+        <Nav className="ms-auto" data-target="#navbarRightAlignExample">
           <Nav.Link href="#AboutMe"
             onClick={() => handlePageChange("AboutMe")}
             className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}

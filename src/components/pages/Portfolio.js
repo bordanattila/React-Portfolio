@@ -43,7 +43,8 @@ const projects = [
 
 function Portfolio () {
     return (
-        <div className="col-12-lg col-6-md col-3-sm">
+        <div className="col-12-lg col-6-md col-3-sm fullPortfolio">
+                <h2>Projects I completed</h2>
               <div className="project justify-content-center">
             <Project
                 projects={projects}

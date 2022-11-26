@@ -1,11 +1,12 @@
 import React from "react";
 import GitHubIcon from "./images/github-icon.png";
 import LinkedInIcon from "./images/Linkedin-icon.png";
+import backgroundImg from "./images/Whale.png"
 import "./styles/Footer.css";
 
 function Footer() {
     return (
-        <div>
+        <div className="footer" style={{ backgroundImage: `url(${backgroundImg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
             <span>© 2022 Attila Bordán</span>
             <a target="_blank" href="https://www.github.com"><img className="contact_img" src={GitHubIcon} alt="GitHub icon"></img></a>
 

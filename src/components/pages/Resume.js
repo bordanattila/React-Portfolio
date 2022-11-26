@@ -14,37 +14,37 @@ function Resume() {
     setPageNumber(1);
   }
 
-  function changePage(offSet){
+  function changePage(offSet) {
     setPageNumber(prevPageNumber => prevPageNumber + offSet);
   }
 
-  function changePageBack(){
+  function changePageBack() {
     changePage(-1)
   }
 
-  function changePageNext(){
+  function changePageNext() {
     changePage(+1)
   }
 
   return (
     <div>
       <a href={resumePDF} download="../assets/Attila_Bordan_Resume.pdf" target='_blank'>
-   <button >Download a PDF</button>
-</a>
-      {/* <header className="page-header">
+        <button className="download">Download as a PDF</button>
+      </a>
+      <header className="page-header">
         <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
           <Page height="600" pageNumber={pageNumber} />
         </Document>
         <p> Page {pageNumber} of {numPages}</p>
-        { pageNumber > 1 && 
-        <button onClick={changePageBack}>Previous Page</button>
+        {pageNumber > 1 &&
+          <button onClick={changePageBack}>Previous Page</button>
         }
         {
           pageNumber < numPages &&
           <button onClick={changePageNext}>Next Page</button>
         }
-      </header> */}
-      <center>
+      </header>
+      {/* <center>
         <div>
           <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
             {Array.from(
@@ -58,7 +58,7 @@ function Resume() {
             )}
           </Document>
         </div>
-      </center>
+      </center> */}
     </div>
   );
 }

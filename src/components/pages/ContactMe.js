@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
+import "../styles/ContactMe.css";
 
 function ContactMe() {
     // Create state variables for the form and set their initial values to empty string
@@ -87,46 +88,50 @@ function ContactMe() {
         <div className="mb-3 container">
             <form className="messageForm">
                 <input
-                    className="form-control container-sm container-md"
-                    value={visitorName}
+                    className={`form-control container-sm container-md ${visitorName ? 'has-value' : ''}`} 
                     name="visitorName"
                     onChange={inputHandler}
-                    onMouseLeave={checkName}
-                    type="text"
-                    placeholder="Your name"
-                /></form>
+                    // onMouseLeave={checkName}
+                    type="text"   
+                    id="textbox"
+                />
+                <label htmlFor="textbox">Your Name</label>
+                </form>
             <form className="messageForm">
                 <input
-                    className="form-control container-sm container-md"
-                    value={email}
+                    className={`form-control container-sm container-md flex ${email ? 'has-value' : ''}`}
                     name="email"
                     onChange={inputHandler}
-                    onMouseLeave={checkEmail}
+                    // onMouseLeave={checkEmail}
                     type="email"
-                    placeholder="Your email"
-                /></form>
+                />
+                <label htmlFor="textbox">Your Email</label>
+                </form>
             <form className="messageForm">
                 <input
-                    className="form-control container-sm container-md"
-                    value={address}
+                    className={`form-control container-sm container-md ${address ? 'has-value' : ''}`}
                     name="address"
                     onChange={inputHandler}
-                    onMouseLeave={checkAddress}
+                    // onMouseLeave={checkAddress}
                     type="text"
-                    placeholder="Your address"
-                /></form>
+                />
+                <label htmlFor="textbox">Your Address</label>
+                </form>
             <form className="messageForm">
-                <input
-                    className="form-control container-sm container-md"
-                    value={message}
+                <textarea
+                    rows="10" 
+                    cols="1"
+                    className={`form-control container-sm container-md ${message ? 'has-value' : ''}`}
+                    // value={message}
                     name="message"
                     onChange={inputHandler}
                     onMouseLeave={checkMessage}
-                    type="text"
-                    placeholder="Your message"
-                /></form>
+                    type="text"                   
+                />
+                <label htmlFor="textbox">Your Message</label>
+                </form>
             <button type="button"
-                className="btn btn-success"
+                className="btn btn-primary"
                 onClick={submitHandler}>
                 Submit
             </button>
