@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "56dd9cf484089be5effa",
-    "url": "/React-Portfolio/static/css/main.4297d964.chunk.css"
+    "revision": "012c900bc214d151be3b",
+    "url": "/React-Portfolio/static/css/main.578854a8.chunk.css"
   },
   {
-    "revision": "56dd9cf484089be5effa",
-    "url": "/React-Portfolio/static/js/main.56dd9cf4.chunk.js"
+    "revision": "012c900bc214d151be3b",
+    "url": "/React-Portfolio/static/js/main.012c900b.chunk.js"
   },
   {
     "revision": "366ad233c9afb597f599",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/js/runtime~main.0b630f53.js"
   },
   {
-    "revision": "559f578785ec3c3253c4f72bb569bcaa",
-    "url": "/React-Portfolio/static/media/Attila_Bordan_Resume3.559f5787.pdf"
+    "revision": "fd7b5d819cce4fcf7ced498f781568db",
+    "url": "/React-Portfolio/static/media/Attila_Bordan_Resume.fd7b5d81.pdf"
   },
   {
     "revision": "6c94e8d2941de6d432d047f9b80669ed",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/Linkedin-icon.69f4ab53.png"
   },
   {
-    "revision": "d179d2104c5790e532810cccc20ef16b",
+    "revision": "849dc0f030dae188416ea8e110c00f76",
     "url": "/React-Portfolio/index.html"
   }
 ];
