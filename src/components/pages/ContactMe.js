@@ -38,6 +38,10 @@ function ContactMe() {
         if (email === "") {
             alert("Email is a required field");
             return;
+        } 
+        if (!validateEmail) {
+            alert("The email address you entered does not appear to be valid");
+            return;
         }
     };
     const checkAddress = (e) => {
@@ -77,10 +81,10 @@ function ContactMe() {
             return;
         }
     };
-
+    
     // Regex to validate email input
     function validateEmail(email) {
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const re = /([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
         return re.test(String(email).toLowerCase());
     };
 
@@ -102,7 +106,7 @@ function ContactMe() {
                     className={`form-control container-sm container-md flex ${email ? 'has-value' : ''}`}
                     name="email"
                     onChange={inputHandler}
-                    // onMouseLeave={checkEmail}
+                    onMouseLeave={checkEmail}
                     type="email"
                 />
                 <label htmlFor="textbox">Your Email</label>

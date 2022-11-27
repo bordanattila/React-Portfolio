@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import resumePDF from "../assets/Attila_Bordan_Resume.pdf";
+import resumePDF from "../assets/Attila_Bordan_Resume3.pdf";
 import "../styles/Resume.css";
 
 // Create Document Component
@@ -18,47 +18,46 @@ function Resume() {
     setPageNumber(prevPageNumber => prevPageNumber + offSet);
   }
 
-  function changePageBack() {
+  function previousPage() {
     changePage(-1)
   }
 
-  function changePageNext() {
+  function nextPage() {
     changePage(+1)
   }
 
   return (
     <div>
-      <a href={resumePDF} download="../assets/Attila_Bordan_Resume.pdf" target='_blank'>
-        <button className="download">Download as a PDF</button>
-      </a>
-      <header className="page-header">
-        <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page height="600" pageNumber={pageNumber} />
-        </Document>
-        <p> Page {pageNumber} of {numPages}</p>
-        {pageNumber > 1 &&
-          <button onClick={changePageBack}>Previous Page</button>
-        }
-        {
-          pageNumber < numPages &&
-          <button onClick={changePageNext}>Next Page</button>
-        }
-      </header>
-      {/* <center>
-        <div>
-          <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
-            {Array.from(
-              new Array(numPages),
-              (el,index) => (
-                <Page 
-                  key={`page_${index+1}`}
-                  pageNumber={index+1}
-                />
-              )
-            )}
-          </Document>
-        </div>
-      </center> */}
+      <div className="download">
+        <a href={resumePDF} download="../assets/Attila_Bordan_Resume.pdf" target='_blank'>
+          <button>Download as a PDF</button>
+        </a>
+      </div>
+      <Document
+        file={resumePDF}
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <div>
+        <p>
+          Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+        </p>
+        <button
+          type="button"
+          disabled={pageNumber <= 1}
+          onClick={previousPage}
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          disabled={pageNumber >= numPages}
+          onClick={nextPage}
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 }
