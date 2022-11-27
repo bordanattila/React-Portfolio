@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import resumePDF from "../assets/Attila_Bordan_Resume3.pdf";
+import resumePDF from "../assets/Attila_Bordan_Resume.pdf";
 import "../styles/Resume.css";
 
 // Create Document Component
@@ -39,7 +39,7 @@ function Resume() {
       >
         <Page pageNumber={pageNumber} />
       </Document>
-      <div>
+      <div className="navigation">
         <p>
           Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
         </p>

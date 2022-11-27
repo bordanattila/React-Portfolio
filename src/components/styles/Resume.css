@@ -16,4 +16,19 @@
 
 .react-pdf__Page {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.react-pdf__Page__textContent {
+  visibility: hidden;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }

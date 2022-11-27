@@ -1,9 +1,10 @@
 {
   "name": "portfolio-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://bordanattila.github.io/React-Portfolio",
   "dependencies": {
+    "@react-pdf/renderer": "^3.0.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",

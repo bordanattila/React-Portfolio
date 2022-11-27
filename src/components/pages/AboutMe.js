@@ -18,7 +18,7 @@ export default function AboutMe() {
             <div className="aboutMeText">
                 <div className="top">
 
-                    <h1>I'm Attila</h1>
+                    <h1>Hi I'm Attila</h1>
                     <h2>a supply chain professional and programmer.</h2>
                     <img className="package" src={Package} alt="log_img"></img>
                         <img className="computer" src={Computer} alt="computer-img"></img>
