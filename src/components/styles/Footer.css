@@ -4,7 +4,7 @@ a {
 
 .footer {
     text-align: center;
-    min-height: 5rem;
+    min-height: 7rem;
     display: flex;    
     flex-wrap: wrap;
     justify-content: center;

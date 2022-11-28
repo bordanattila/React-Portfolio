@@ -1,5 +1,5 @@
 .container {
-    padding-top: 15px;
+    padding: 20px 0;
     background-color: #8D9EFF;
 }
 
@@ -32,10 +32,23 @@
     white-space: nowrap;
 }
 
+.messageForm > .icon {
+    position: absolute;
+    pointer-events: none;
+    translate: 0 -50%;
+    transition: 0.35s;
+}
+
+.messageForm > .icon {
+    top:47%;
+    left: 12px;
+    white-space: nowrap;
+}
+
 .messageForm > input {
     height: 50px;
     width: 220px;
-    padding-left: 10px;
+    padding-left: 35px;
     border: 0.5px solid grey;
     border-bottom: solid blueviolet;
     background: transparent;
@@ -66,7 +79,7 @@
 .messageForm >
 :is(textarea:focus, textarea.has-value)
 ~ label {
-    translate: -35px -154px;
+    translate: -35px -135px;
     scale: 0.875;
     color: blueviolet;
 }
@@ -82,3 +95,18 @@
     display: inline-flex !important;
 }
 
+.error-text {
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.contactmeh2 {
+    padding: 20px 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.contactPage {
+    background-color: #B9E0FF;
+}

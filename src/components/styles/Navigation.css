@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center; 
-    min-height: 5rem;
+    min-height: 7rem;
 }
 
 .navbar-brand {
@@ -16,4 +16,8 @@
 .navbar-nav {
     align-items: flex-end;    
     padding-right: 10px;
+}
+
+.nav-link {
+    font-size: 1.5rem !important;
 }

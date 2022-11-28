@@ -12,7 +12,7 @@ const projects = [
     {
         imageSource: Egaugnal,
         projectName: "Egaugnal",
-        repo: "http://github.com/https://github.com/BryanBorek/egaugnal/",
+        repo: "https://github.com/BryanBorek/egaugnal/",
         deployed: "https://egaugnal.herokuapp.com/"
     },
     {
@@ -50,7 +50,7 @@ const projects = [
 function Portfolio () {
     return (
         <div className="col-12-lg col-6-md col-3-sm fullPortfolio">
-                <h3>Projects I created</h3>
+                <h1 className="projectsh1">Projects I created</h1>
               <div className="project justify-content-center">
             <Project
                 projects={projects}

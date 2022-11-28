@@ -1,18 +1,9 @@
-body {
-    background-color: #8D9EFF;
-    text-align: center;
-}
-
 h1 {
     font-family: 'Caveat', cursive;
-    font-size: 5.625rem;
-    line-height: 2;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;    
-    font-weight: normal;    
 }
 
 .profile_img {
@@ -49,4 +40,8 @@ h2 {
 .bottom {
     margin-bottom: 0;
     padding-bottom: 5px;
+}
+
+.bio {
+    font-size: 1.5rem;
 }
