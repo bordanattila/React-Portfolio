@@ -6,7 +6,7 @@ As a junior web developer I created an online portfolio for potential future emp
 
 ## Usage
 
-![alt text](.src/components/assets/images/screenshot.png)
+![alt text](./src/components/assets/images/screenshot.png)
 
 ## :trophy: Badges
 
