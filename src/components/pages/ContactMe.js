@@ -94,7 +94,7 @@ function ContactMe() {
                         className={`form-control container-sm container-md ${visitorName ? 'has-value' : ''}`}
                         name="visitorName"
                         onChange={inputHandler}
-                        // onMouseLeave={checkName}
+                        onMouseLeave={checkName}
                         type="text"
                         id="textbox"
                     />
@@ -117,7 +117,7 @@ function ContactMe() {
                         className={`form-control container-sm container-md ${address ? 'has-value' : ''}`}
                         name="address"
                         onChange={inputHandler}
-                        // onMouseLeave={checkAddress}
+                        onMouseLeave={checkAddress}
                         type="text"
                     />
                     <Icon className="icon" name="home" />
@@ -128,7 +128,6 @@ function ContactMe() {
                         rows="10"
                         cols="1"
                         className={`form-control container-sm container-md ${message ? 'has-value' : ''}`}
-                        // value={message}
                         name="message"
                         onChange={inputHandler}
                         onMouseLeave={checkMessage}

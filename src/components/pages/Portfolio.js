@@ -8,6 +8,7 @@ import Tech_Blog from "../images/techBlog.png"
 import Text_Editor from "../images/textEditor.png"
 import "../styles/Portfolio.css"
 
+// props for the Project component
 const projects = [
     {
         imageSource: Egaugnal,
