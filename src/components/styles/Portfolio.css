@@ -1,0 +1,35 @@
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.projectsh1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.project_img {
+    width: 400px;
+    height: 320px;
+}
+.project {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right:5%;
+    justify-content: center;
+}
+
+.project-card {
+    padding: 10px;
+}
+
+.fullPortfolio {
+    background-color: #8D9EFF;
+}
+
+p> a {
+    color: beige;
+}

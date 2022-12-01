@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'Caveat', cursive !important;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile_img {
+    max-width: 25%;
+    margin-top: 15px;
+    float: left;
+    border: 2px blueviolet solid;
+    margin-right: 40px;
+}
+
+.aboutMe {
+    text-align: left;
+    background-color: #8D9EFF;
+}
+
+.aboutMeText {
+    padding-top: 170px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.computer {
+    padding-top: 10px;
+    padding-bottom: 55px;
+    max-width: 15%;
+    max-height: 15%;
+}
+
+.package {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.bottom {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.bio {
+    font-size: 1.5rem;
+}
