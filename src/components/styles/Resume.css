@@ -1,0 +1,12 @@
+.summary {
+    text-align: center;
+    background-color: #8D9EFF;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p > img {
+    height: 30px;
+}
