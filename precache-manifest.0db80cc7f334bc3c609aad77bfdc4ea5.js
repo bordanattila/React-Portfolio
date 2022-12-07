@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "5eab42a8c44b5f9e188b",
-    "url": "/React-Portfolio/static/css/main.8acbd3b3.chunk.css"
+    "revision": "e0fd8cc563b485ab0e24",
+    "url": "/React-Portfolio/static/css/main.eea93580.chunk.css"
   },
   {
-    "revision": "5eab42a8c44b5f9e188b",
-    "url": "/React-Portfolio/static/js/main.62135d32.chunk.js"
+    "revision": "e0fd8cc563b485ab0e24",
+    "url": "/React-Portfolio/static/js/main.10c9bee7.chunk.js"
   },
   {
-    "revision": "5da024618d114839928a",
-    "url": "/React-Portfolio/static/js/runtime~main.060275c1.js"
+    "revision": "a78455486c0e0160b360",
+    "url": "/React-Portfolio/static/js/runtime~main.ed161462.js"
   },
   {
-    "revision": "d48b05db017109a95c79",
-    "url": "/React-Portfolio/static/css/2.38f0727a.chunk.css"
+    "revision": "d3a193345c2deaef0db9",
+    "url": "/React-Portfolio/static/css/2.218fbc71.chunk.css"
   },
   {
-    "revision": "d48b05db017109a95c79",
-    "url": "/React-Portfolio/static/js/2.ba6b0fc6.chunk.js"
+    "revision": "d3a193345c2deaef0db9",
+    "url": "/React-Portfolio/static/js/2.bcb468ad.chunk.js"
   },
   {
-    "revision": "c05ec72843d736d77fcb",
-    "url": "/React-Portfolio/static/js/3.96428a79.chunk.js"
+    "revision": "14c31b200b098227f28b",
+    "url": "/React-Portfolio/static/js/3.91f6db89.chunk.js"
   },
   {
     "revision": "1cd3b379dbc50c146da6d2eede14e5eb",
@@ -56,16 +56,28 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/noteTaker.77f2c012.png"
   },
   {
-    "revision": "e0f0cbed9696a4e7944c41a9db37245c",
-    "url": "/React-Portfolio/static/media/techBlog.e0f0cbed.png"
+    "revision": "9848c553694c5f3e12aeb586e71abf63",
+    "url": "/React-Portfolio/static/media/techBlog.9848c553.png"
   },
   {
-    "revision": "d432146c6cadb6ef2111b49a46c513cc",
-    "url": "/React-Portfolio/static/media/textEditor.d432146c.png"
+    "revision": "b7790ed493662ec43f244c021aaa6381",
+    "url": "/React-Portfolio/static/media/textEditor.b7790ed4.png"
   },
   {
     "revision": "d2ab883bbbbd52451e9191a457cc7bff",
     "url": "/React-Portfolio/static/media/Attila_Bordan_Resume.d2ab883b.pdf"
+  },
+  {
+    "revision": "9b3366b530ce7c0e43bbb073a3ba4b55",
+    "url": "/React-Portfolio/static/media/python-icon.9b3366b5.png"
+  },
+  {
+    "revision": "e91bf04a10ea7a7d0d40cfa6dfec1cea",
+    "url": "/React-Portfolio/static/media/css.e91bf04a.png"
+  },
+  {
+    "revision": "2ae3fc0e9d206e159d8a1dfaa1403328",
+    "url": "/React-Portfolio/static/media/javascript-icon.2ae3fc0e.png"
   },
   {
     "revision": "0cdbfd084192a2a859fe89dce56e1348",
@@ -80,24 +92,20 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/facebook-icon.c94909a9.png"
   },
   {
-    "revision": "faff92145777a3cbaf8e7367b4807987",
-    "url": "/React-Portfolio/static/media/icons.faff9214.woff"
+    "revision": "0ab54153eeeca0ce03978cc463b257f7",
+    "url": "/React-Portfolio/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/React-Portfolio/static/media/icons.b87b9ba5.ttf"
+    "revision": "faff92145777a3cbaf8e7367b4807987",
+    "url": "/React-Portfolio/static/media/icons.faff9214.woff"
   },
   {
     "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
     "url": "/React-Portfolio/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "0ab54153eeeca0ce03978cc463b257f7",
-    "url": "/React-Portfolio/static/media/icons.0ab54153.woff2"
-  },
-  {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/React-Portfolio/static/media/outline-icons.ef60a4f6.woff"
+    "revision": "962a1bf31c081691065fe333d9fa8105",
+    "url": "/React-Portfolio/static/media/icons.962a1bf3.svg"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -108,24 +116,28 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/outline-icons.cd6c777f.woff2"
   },
   {
-    "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
-    "url": "/React-Portfolio/static/media/outline-icons.82f60bd0.svg"
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/React-Portfolio/static/media/icons.b87b9ba5.ttf"
   },
   {
     "revision": "ad97afd3337e8cda302d10ff5a4026b8",
     "url": "/React-Portfolio/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "962a1bf31c081691065fe333d9fa8105",
-    "url": "/React-Portfolio/static/media/icons.962a1bf3.svg"
+    "revision": "e8c322de9658cbeb8a774b6624167c2c",
+    "url": "/React-Portfolio/static/media/brand-icons.e8c322de.woff2"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/React-Portfolio/static/media/outline-icons.ef60a4f6.woff"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/React-Portfolio/static/media/brand-icons.13db00b7.eot"
   },
   {
-    "revision": "e8c322de9658cbeb8a774b6624167c2c",
-    "url": "/React-Portfolio/static/media/brand-icons.e8c322de.woff2"
+    "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
+    "url": "/React-Portfolio/static/media/outline-icons.82f60bd0.svg"
   },
   {
     "revision": "a046592bac8f2fd96e994733faf3858c",
@@ -136,15 +148,15 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
-    "url": "/React-Portfolio/static/media/brand-icons.c5ebe0b3.ttf"
-  },
-  {
     "revision": "a1a749e89f578a49306ec2b055c073da",
     "url": "/React-Portfolio/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "d2208cfc2345ddbb7da8223a6d8bf524",
+    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
+    "url": "/React-Portfolio/static/media/brand-icons.c5ebe0b3.ttf"
+  },
+  {
+    "revision": "6ffec76c075e629b7b2c3a54e755e841",
     "url": "/React-Portfolio/index.html"
   }
 ];
