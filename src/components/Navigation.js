@@ -1,11 +1,10 @@
 import React from "react";
 import "./styles/Navigation.css";
-import backgroundImg from "./images/Whale.png"
 import { Nav, Navbar } from "react-bootstrap";
 
 function NavigationBar({ currentPage, handlePageChange }) {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{ backgroundImage: `url(${backgroundImg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+    <Navbar collapseOnSelect expand="lg"  >
       <Navbar.Brand >
         Attila Bordán
       </Navbar.Brand>

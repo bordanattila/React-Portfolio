@@ -1,10 +1,11 @@
 .summary {
     text-align: center;
-    background-color: #8D9EFF;
+    color: white !important;
 }
 
 ul {
     list-style-type: none;
+    color: white !important;
 }
 
 p > img {

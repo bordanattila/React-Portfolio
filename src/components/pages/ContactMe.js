@@ -28,31 +28,7 @@ function ContactMe() {
             setMessage(inputValue);
         }
     };
-    // Alert user on hover out 
-    const checkName = (e) => {
-        if (visitorName === "") {
-            alert("Name is a required field");
-            return;
-        }
-    };
-    const checkEmail = (e) => {
-        if (email === "") {
-            alert("Email is a required field");
-            return;
-        }
-    };
-    const checkAddress = (e) => {
-        if (address === "") {
-            alert("Address is a required field");
-            return;
-        }
-    };
-    const checkMessage = (e) => {
-        if (message === "") {
-            alert("Message is a required field");
-            return;
-        }
-    }
+
 
     // Check to see if all required fields are filled out
     const submitHandler = (e) => {
@@ -94,7 +70,6 @@ function ContactMe() {
                         className={`form-control container-sm container-md ${visitorName ? 'has-value' : ''}`}
                         name="visitorName"
                         onChange={inputHandler}
-                        onMouseLeave={checkName}
                         type="text"
                         id="textbox"
                     />
@@ -106,7 +81,6 @@ function ContactMe() {
                         className={`form-control container-sm container-md flex ${email ? 'has-value' : ''}`}
                         name="email"
                         onChange={inputHandler}
-                        onMouseLeave={checkEmail}
                         type="email"
                     />
                     <Icon className="icon" name="mail outline" />
@@ -117,7 +91,6 @@ function ContactMe() {
                         className={`form-control container-sm container-md ${address ? 'has-value' : ''}`}
                         name="address"
                         onChange={inputHandler}
-                        onMouseLeave={checkAddress}
                         type="text"
                     />
                     <Icon className="icon" name="home" />
@@ -130,7 +103,6 @@ function ContactMe() {
                         className={`form-control container-sm container-md ${message ? 'has-value' : ''}`}
                         name="message"
                         onChange={inputHandler}
-                        onMouseLeave={checkMessage}
                         type="text"
                     />
                     <label htmlFor="textbox">Your Message</label>

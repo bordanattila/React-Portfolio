@@ -14,23 +14,26 @@ export default function AboutMe() {
     return (
 
         <div className="container-fluid aboutMe">
-            <img className="profile_img" style={styles.ProfilePictureStyle} src={ProfilePicture} alt={"Profile picture"}></img>
-            <div className="aboutMeText">
-                <div className="top">
+            <div className="top">
+                <div>
 
                     <h1>Hi I'm Attila</h1>
-                    <h2>a supply chain professional and programmer.</h2>
-                    <img className="package" src={Package} alt="log_img"></img>
-                    <img className="computer" src={Computer} alt="computer-img"></img>
+                    <h2>a full stack web developer with a background in retail and supply chain management.</h2>
+                    {/* <img className="package" src={Package} alt="log_img"></img>
+                    <img className="computer" src={Computer} alt="computer-img"></img> */}
                 </div>
-                <p className="bio">It is a common name in Hungary where I am from. I currently reside and work in Virginia in the United States.
-                    I earned my Master's degree from the Florida Institute of Technology in Supply Chain Management. Right now I am working in this field which is very enjoyable.
-                    However, it can become very tedious and frustrating when the right tools are not available.</p>
-                <p className="bio">The lack of tools made me revisit an old interest of mine, and that was coding.
-                    I started learning Python which I was fascinated by. It was amazing to be able to make programs for myself that make everyday life easier and fun little games as well.
-                    I am still improving that skill.</p>
-                <p className="bio">Currently, I am enrolled in a full-stack web developer course through the University of Minnesota.</p>
-                <p className="bottom bio">In my free time when I'm not sharpening my coding skills I enjoy CrossFit or a good Formula-1 race on a Sunday.</p>
+                <div className="profile_image">
+
+                    <img className="profile_img"  src={ProfilePicture} alt={"Profile picture"}></img>
+                </div>
+            </div>
+            <div className="aboutMeText">
+                <div className="bio">
+                    <p >Recently earned a certificate in full stack development form the University of Minnesota and developed skills in HTML, CSS, JavaScript, Bootstrap, MERN, Material UI, Handlebars, MySQL, jQuery, Apollo, and a bit of Python. </p>
+                    <p >Having an appetite for continuous learning and problem solving. I enjoy collaborating and connecting with co-workers. Passionate about building applications that assist people to make their lives easier. </p>
+                    {/* <p >Currently, I am enrolled in a full-stack web developer course through the University of Minnesota.</p> */}
+                    <p className="bottom">Looking to bring my attention to detail and technical skills to a company to grow and become a valuable asset.</p>
+                </div>
             </div>
         </div>
     );

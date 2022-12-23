@@ -4,13 +4,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center; 
-    min-height: 7rem;
+    min-height: 7rem;    
 }
 
 .navbar-brand {
     font-family: "Caveat", cursive, serif;
     font-size: 2.6rem !important;
     padding-left: 75px;
+    color: white !important;
 }
 
 .navbar-nav {
@@ -20,4 +21,5 @@
 
 .nav-link {
     font-size: 1.5rem !important;
+    color: white !important;
 }

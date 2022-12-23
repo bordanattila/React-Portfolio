@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.portfolio {
+  background-image: url("./components/images/wall.jpg");
+  background-size: cover;
+  height: fit-content;
+  background-repeat: no-repeat;
+}
