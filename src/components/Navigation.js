@@ -9,7 +9,7 @@ function NavigationBar({ currentPage, handlePageChange }) {
         Attila Bordán
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" data-target="#navbarRightAlignExample" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Collapse id="responsive-navbar-nav ">
         <Nav className="ms-auto" data-target="#navbarRightAlignExample">
           <Nav.Link href="#AboutMe"
             onClick={() => handlePageChange("AboutMe")}

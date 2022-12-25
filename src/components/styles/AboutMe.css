@@ -11,24 +11,16 @@ p {
 }
 
 .profile_img {
-    max-width: 50%;
-    margin-top: 15px;
-    float: right;
-    margin-right: 40px;
-    vertical-align: middle;
+    padding: 10px 0;
+    max-width: 600px;
+    max-height: 482px;
 }
 
 .aboutMeText {
-    padding-top: 170px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-
+    padding-top: 70px !important;
 }
 
 .top {
-    margin: 0 45px;
-    padding-left: 10px;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -36,16 +28,6 @@ p {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    display: grid;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    grid-auto-columns: 1fr;
-    -ms-grid-columns: 1fr .8fr;
-    grid-template-columns: 1fr .8fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
 }
 
 .computer {
@@ -67,7 +49,6 @@ p {
 
 .bio {
     font-size: 1.5rem;
-    /* color: white; */
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -75,4 +56,23 @@ p {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.aboutMe {
+    color: beige;
+}
+
+.dev {
+    font-size: 3rem;
+    margin: 4px;
+}
+
+.icons {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .ui {
+        flex-direction: row;
+    }
 }

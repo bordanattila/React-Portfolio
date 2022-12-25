@@ -1,13 +1,30 @@
+ul {
+    list-style-type: none;
+    line-height: 4rem;
+}
+
+p > img {
+    height: 30px;
+}
+
 .summary {
     text-align: center;
     color: white !important;
 }
 
-ul {
-    list-style-type: none;
-    color: white !important;
+.highlights {
+    font-size: x-large;
+    color: beige;
+    margin: 0 250px;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-p > img {
-    height: 30px;
+.button {
+    margin-bottom: 20px !important;
 }

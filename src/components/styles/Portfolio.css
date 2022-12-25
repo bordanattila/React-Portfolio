@@ -5,6 +5,7 @@ h1 {
 .projectsh1 {
     text-align: center;
     padding: 20px 0;
+    color: white;
 }
 
 .project_img {
@@ -25,15 +26,19 @@ h1 {
 .project-card {
     padding: 10px;
     margin: 20px;
-      /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-p> a {
+p > a {
+    color: beige;
+}
+
+.projectName {
     color: beige;
 }

@@ -6,10 +6,17 @@ import Egaugnal from "../images/egaugnal.png";
 import Note_Taker from "../images/noteTaker.png"
 import Tech_Blog from "../images/techBlog.png"
 import Text_Editor from "../images/textEditor.png"
+import Prima_Materia from "../images/prima-materia-home.jpg";
 import "../styles/Portfolio.css"
 
 // props for the Project component
 const projects = [
+    {
+        imageSource: Prima_Materia,
+        projectName: "Prima-Materia",
+        repo: "https://github.com/bordanattila/Prima-Materia/",
+        deployed: "https://attilamagic-app.herokuapp.com/"
+    },
     {
         imageSource: Egaugnal,
         projectName: "Egaugnal",
