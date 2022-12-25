@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "dc43f1845c015184f8eb",
-    "url": "/React-Portfolio/static/css/main.f7d72890.chunk.css"
+    "revision": "2460264836631af95125",
+    "url": "/React-Portfolio/static/css/main.47fbf949.chunk.css"
   },
   {
-    "revision": "dc43f1845c015184f8eb",
-    "url": "/React-Portfolio/static/js/main.d4512847.chunk.js"
+    "revision": "2460264836631af95125",
+    "url": "/React-Portfolio/static/js/main.2ca24d57.chunk.js"
   },
   {
-    "revision": "3cfd486bdebb84fa9478",
-    "url": "/React-Portfolio/static/js/runtime~main.cb95448c.js"
+    "revision": "baeae68138e41800c6fa",
+    "url": "/React-Portfolio/static/js/runtime~main.d9ee8423.js"
   },
   {
-    "revision": "1b9cde002056ac3b9055",
-    "url": "/React-Portfolio/static/css/2.218fbc71.chunk.css"
+    "revision": "ffc64470aea3ff0e7cea",
+    "url": "/React-Portfolio/static/css/2.5abb3d06.chunk.css"
   },
   {
-    "revision": "1b9cde002056ac3b9055",
-    "url": "/React-Portfolio/static/js/2.ce3e5bfd.chunk.js"
+    "revision": "ffc64470aea3ff0e7cea",
+    "url": "/React-Portfolio/static/js/2.f8a9ea26.chunk.js"
   },
   {
-    "revision": "0638e246dbbc7b472de9",
-    "url": "/React-Portfolio/static/js/3.c1231604.chunk.js"
+    "revision": "1c380ee40c6dea61c2f1",
+    "url": "/React-Portfolio/static/js/3.53a98f8d.chunk.js"
   },
   {
     "revision": "52cfef01a9469b677be6c0d509b5c7ca",
@@ -50,6 +50,10 @@ self.__precacheManifest = [
   {
     "revision": "b7790ed493662ec43f244c021aaa6381",
     "url": "/React-Portfolio/static/media/textEditor.b7790ed4.png"
+  },
+  {
+    "revision": "d252fd9e99e01f42e9f820e37aa41aab",
+    "url": "/React-Portfolio/static/media/prima-materia-home.d252fd9e.jpg"
   },
   {
     "revision": "d2ab883bbbbd52451e9191a457cc7bff",
@@ -92,20 +96,20 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/package.c02c93d1.png"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/React-Portfolio/static/media/icons.b87b9ba5.ttf"
-  },
-  {
-    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
-    "url": "/React-Portfolio/static/media/icons.8e3c7f55.eot"
-  },
-  {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/React-Portfolio/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/React-Portfolio/static/media/outline-icons.cd6c777f.woff2"
+    "revision": "faff92145777a3cbaf8e7367b4807987",
+    "url": "/React-Portfolio/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "9c74e172f87984c48ddf5c8108cabe67",
+    "url": "/React-Portfolio/static/media/flags.9c74e172.png"
+  },
+  {
+    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
+    "url": "/React-Portfolio/static/media/icons.8e3c7f55.eot"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -116,47 +120,47 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "faff92145777a3cbaf8e7367b4807987",
-    "url": "/React-Portfolio/static/media/icons.faff9214.woff"
-  },
-  {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/React-Portfolio/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
-    "revision": "962a1bf31c081691065fe333d9fa8105",
-    "url": "/React-Portfolio/static/media/icons.962a1bf3.svg"
-  },
-  {
-    "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
-    "url": "/React-Portfolio/static/media/outline-icons.82f60bd0.svg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/React-Portfolio/static/media/brand-icons.13db00b7.eot"
   },
   {
-    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
-    "url": "/React-Portfolio/static/media/brand-icons.c5ebe0b3.ttf"
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/React-Portfolio/static/media/icons.b87b9ba5.ttf"
   },
   {
-    "revision": "a046592bac8f2fd96e994733faf3858c",
-    "url": "/React-Portfolio/static/media/brand-icons.a046592b.woff"
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/React-Portfolio/static/media/outline-icons.cd6c777f.woff2"
   },
   {
-    "revision": "9c74e172f87984c48ddf5c8108cabe67",
-    "url": "/React-Portfolio/static/media/flags.9c74e172.png"
-  },
-  {
-    "revision": "a1a749e89f578a49306ec2b055c073da",
-    "url": "/React-Portfolio/static/media/brand-icons.a1a749e8.svg"
+    "revision": "962a1bf31c081691065fe333d9fa8105",
+    "url": "/React-Portfolio/static/media/icons.962a1bf3.svg"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "/React-Portfolio/static/media/brand-icons.e8c322de.woff2"
   },
   {
-    "revision": "65df13761180985ba65d8d832fbd9397",
+    "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
+    "url": "/React-Portfolio/static/media/outline-icons.82f60bd0.svg"
+  },
+  {
+    "revision": "a046592bac8f2fd96e994733faf3858c",
+    "url": "/React-Portfolio/static/media/brand-icons.a046592b.woff"
+  },
+  {
+    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
+    "url": "/React-Portfolio/static/media/brand-icons.c5ebe0b3.ttf"
+  },
+  {
+    "revision": "a1a749e89f578a49306ec2b055c073da",
+    "url": "/React-Portfolio/static/media/brand-icons.a1a749e8.svg"
+  },
+  {
+    "revision": "e0fa7f58f0422037930596106d207b76",
     "url": "/React-Portfolio/index.html"
   }
 ];
