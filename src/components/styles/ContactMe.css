@@ -1,5 +1,17 @@
-.container {
+:root {
+    --border_colour: beige;
+}
+
+.container2 {
     padding: 20px 0;
+    text-align: center;
+     /* From https://css.glass */
+     background: rgba(255, 255, 255, 0.2);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .messageForm {
@@ -15,7 +27,7 @@
     height: 2px;
     transform: scaleX(0);
     transition: 0.35s;
-    background-color: blueviolet;
+    background-color: blue;
 }
 
 .messageForm > label {
@@ -23,9 +35,6 @@
     pointer-events: none;
     translate: 0 -50%;
     transition: 0.35s;
-}
-
-.messageForm > label {
     top: 50%;
     left: 34px;
     white-space: nowrap;
@@ -36,9 +45,6 @@
     pointer-events: none;
     translate: 0 -50%;
     transition: 0.35s;
-}
-
-.messageForm > .icon {
     top:47%;
     left: 12px;
     white-space: nowrap;
@@ -49,8 +55,9 @@
     width: 220px;
     padding-left: 35px;
     border: 0.5px solid grey;
-    border-bottom: solid blueviolet;
+    border-bottom: solid --var(border-colour);
     background: transparent;
+    color: beige;
 }
 
 .messageForm >
@@ -58,7 +65,7 @@
 ~ label {
     translate: -35px -48px;
     scale: 0.875;
-    color: blueviolet;
+    color: --var(border-colour);
 }
 
 .messageForm >
@@ -71,8 +78,9 @@
 .messageForm > textarea {
     padding-left: 10px;
     border: 0.5px solid grey;
-    border-bottom: solid blueviolet;
+    border-bottom: solid --var(border-colour);
     background: transparent;
+    width: 400px;
 }
 
 .messageForm >
@@ -80,7 +88,7 @@
 ~ label {
     translate: -35px -135px;
     scale: 0.875;
-    color: blueviolet;
+    color: --var(border-colour);
 }
 
 .messageForm >
@@ -88,10 +96,6 @@
 ~ .underline {
     border: 0;
     transform: scaleX(1);
-}
-
-.form-control {
-    display: inline-flex !important;
 }
 
 .error-text {
@@ -104,9 +108,40 @@
 .contactmeh2 {
     padding: 20px 0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: beige;
+    text-align: center;
+}
+.form-control {
+    display: inline-flex !important;
+}
+.contactPage {
+    padding: 37px;
+    color: beige;
 }
 
-.contactPage {
-    background-color: #B9E0FF;
-    padding: 37px;
+.box {
+     /* From https://css.glass */
+     background: rgba(255, 255, 255, 0.2);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    align-items: center;
+}
+
+.MuiOutlinedInput-input {
+    color: beige !important;
+}
+
+.sendbtn {
+    margin-bottom: 10px !important;
 }

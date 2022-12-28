@@ -1,17 +1,24 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { useRef, useState } from "react";
 import "../styles/ContactMe.css";
-import { Icon } from "semantic-ui-react";
+import emailjs from '@emailjs/browser';
+
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import FormControl from '@mui/material/FormControl';
+import Button from '@mui/material/Button';
 
 function ContactMe() {
     // Create state variables for the form and set their initial values to empty string
     const [visitorName, setVisitorName] = useState("");
     const [email, setEmail] = useState("");
-    const [address, setAddress] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [alertMessage, setAlertMessage] = useState("");
 
     // Set event handler for user input
     const inputHandler = (e) => {
+
         // Getting the name and the value of the event
         const { target } = (e);
         const inputType = target.name;
@@ -22,17 +29,29 @@ function ContactMe() {
             setVisitorName(inputValue);
         } else if (inputType === "email") {
             setEmail(inputValue);
-        } else if (inputType === "address") {
-            setAddress(inputValue);
+        } else if (inputType === "subject") {
+            setSubject(inputValue);
         } else if (inputType === "message") {
             setMessage(inputValue);
         }
     };
 
+    // set up EmailJS to receive messages
+    const form = useRef();
+
+    const sendEmail = () => {
+        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     // Check to see if all required fields are filled out
     const submitHandler = (e) => {
         e.preventDefault();
+        console.log("sent")
         if (visitorName === "") {
             setAlertMessage("Name is a required field");
             return;
@@ -41,8 +60,8 @@ function ContactMe() {
             setAlertMessage("Email is a required field");
             return;
         }
-        if (address === "") {
-            setAlertMessage("Address is a required field");
+        if (subject === "") {
+            setAlertMessage("Subject is a required field");
             return;
         }
         if (message === "") {
@@ -53,6 +72,7 @@ function ContactMe() {
             setAlertMessage("The email address you entered does not appear to be valid");
             return;
         }
+        sendEmail();
     };
 
     // Regex to validate email input
@@ -62,64 +82,51 @@ function ContactMe() {
     };
 
     return (
-        <div className="contactPage">
-            <div className="container">
-                <h2 className="contactmeh2">If you would like to contact me, please fill out the form below and send me your message</h2>
-                <form className="messageForm">
-                    <input
-                        className={`form-control container-sm container-md ${visitorName ? 'has-value' : ''}`}
-                        name="visitorName"
-                        onChange={inputHandler}
-                        type="text"
-                        id="textbox"
-                    />
-                    <Icon className="icon" name="user outline" />
-                    <label htmlFor="textbox">Your Name</label>
-                </form>
-                <form className="messageForm">
-                    <input
-                        className={`form-control container-sm container-md flex ${email ? 'has-value' : ''}`}
-                        name="email"
-                        onChange={inputHandler}
-                        type="email"
-                    />
-                    <Icon className="icon" name="mail outline" />
-                    <label htmlFor="textbox">Your Email</label>
-                </form>
-                <form className="messageForm">
-                    <input
-                        className={`form-control container-sm container-md ${address ? 'has-value' : ''}`}
-                        name="address"
-                        onChange={inputHandler}
-                        type="text"
-                    />
-                    <Icon className="icon" name="home" />
-                    <label htmlFor="textbox">Your Address</label>
-                </form>
-                <form className="messageForm">
-                    <textarea
-                        rows="10"
-                        cols="1"
-                        className={`form-control container-sm container-md ${message ? 'has-value' : ''}`}
-                        name="message"
-                        onChange={inputHandler}
-                        type="text"
-                    />
-                    <label htmlFor="textbox">Your Message</label>
-                </form>
-                <button type="button"
-                    className="btn btn-primary"
-                    onClick={submitHandler}>
-                    Submit
-                </button>
-                {alertMessage && (
-                    <div>
-                        <p className="error-text">{alertMessage}</p>
-                    </div>
-                )}
+        <>
+            <div className="contactMe">
+                <h2 className="contactmeh2">If you would like to contact me, please fill out the form below and send me a message</h2>
+
+                <Box
+                    className="box"
+                    noValidate
+                    sx={{
+                        '& .MuiTextField-root': { m: 2, width: '35ch', display: "flex !important", },
+                    }}
+                >
+                    <form ref={form} onSubmit={sendEmail}
+                    >
+                        <TextField
+                            onChange={inputHandler}
+                            label="Your name" id="custom-css-outlined-input" name="visitorName" value={visitorName}
+                            InputLabelProps={{ style: { color: 'beige' } }}
+                        />
+                        <TextField label="Your email" id="custom-css-outlined-input" type="email" name="email" value={email}
+                            InputLabelProps={{ style: { color: 'beige' } }}
+                            onChange={inputHandler}
+                        />
+                        <TextField label="Email subject" id="custom-css-outlined-input" name="subject" value={subject}
+                            InputLabelProps={{ style: { color: 'beige' } }}
+                            onChange={inputHandler}
+                        />
+                        <TextField label="Your message" id="custom-css-outlined-input" name="message" value={message} multiline rows={8}
+                            InputLabelProps={{ style: { color: 'beige' } }}
+                            onChange={inputHandler}
+                        />
+                        <Button className="sendbtn" variant="contained" type="submit" value="Send" onClick={submitHandler}>Send</Button>
+                        {alertMessage && (
+                            <div>
+                                <p className="error-text">{alertMessage}</p>
+                            </div>
+                        )}
+                    </form>
+                </Box>
             </div>
-        </div>
+        </>
     );
+
+
+
+
 }
 
 export default ContactMe;

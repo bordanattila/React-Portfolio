@@ -1,11 +1,11 @@
 import React from "react";
-import resumePDF from "../assets/Attila_Bordan_Resume.pdf";
-import { Icon } from "semantic-ui-react";
+import resumePDF from "../assets/Attila_Bordan_resume.pdf";
 import "../styles/Resume.css";
 import Python from "../images/python-icon.png";
 import HTML from "../images/html.png";
 import CSS from "../images/css.png";
 import JS from "../images/javascript-icon.png";
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 // Use Iframe library to display resume in pdf format
 
@@ -14,7 +14,7 @@ function Resume() {
     <div className="summary">
       <a href={resumePDF} download="../assets/Attila_Bordan_Resume.pdf" target='_blank'>
          <div className="ui icon button" data-tooltip="Download resume in PDF">
-         <Icon className="icon" name="cloud download" />
+         <CloudDownloadIcon  className="icon" name="cloud download" />
          </div>
       </a>
       <div className="highlights container text-center">

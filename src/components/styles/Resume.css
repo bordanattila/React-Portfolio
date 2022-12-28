@@ -15,7 +15,6 @@ p > img {
 .highlights {
     font-size: x-large;
     color: beige;
-    margin: 0 250px;
       /* From https://css.glass */
       background: rgba(255, 255, 255, 0.2);
       border-radius: 16px;
