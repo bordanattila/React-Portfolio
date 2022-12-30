@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "e56bc03a746a4c67e98d",
-    "url": "/React-Portfolio/static/css/main.c13a4b3f.chunk.css"
+    "revision": "9d0652823c849e469e8f",
+    "url": "/React-Portfolio/static/css/main.732fdbc4.chunk.css"
   },
   {
-    "revision": "e56bc03a746a4c67e98d",
-    "url": "/React-Portfolio/static/js/main.31ad56bc.chunk.js"
+    "revision": "9d0652823c849e469e8f",
+    "url": "/React-Portfolio/static/js/main.2bf18069.chunk.js"
   },
   {
-    "revision": "4d64e9b9529faf5e8892",
-    "url": "/React-Portfolio/static/js/runtime~main.57b451ed.js"
+    "revision": "e9baf7edcaebca99413f",
+    "url": "/React-Portfolio/static/js/runtime~main.ba84ee90.js"
   },
   {
-    "revision": "b123fb7b79d9f57d3d3b",
+    "revision": "e3c345d559d03e77c124",
     "url": "/React-Portfolio/static/css/2.e3fb7810.chunk.css"
   },
   {
-    "revision": "b123fb7b79d9f57d3d3b",
-    "url": "/React-Portfolio/static/js/2.2dbb2e08.chunk.js"
+    "revision": "e3c345d559d03e77c124",
+    "url": "/React-Portfolio/static/js/2.2590ff4d.chunk.js"
   },
   {
-    "revision": "c8ac9a59178e3e110edf",
-    "url": "/React-Portfolio/static/js/3.3703fa20.chunk.js"
+    "revision": "f84f76428aec2bc922d4",
+    "url": "/React-Portfolio/static/js/3.519677e9.chunk.js"
   },
   {
     "revision": "52cfef01a9469b677be6c0d509b5c7ca",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/prima-materia-home.d252fd9e.jpg"
   },
   {
-    "revision": "3a095338b3abe957c6962fb071a7818a",
-    "url": "/React-Portfolio/static/media/Attila_Bordan_resume.3a095338.pdf"
+    "revision": "6b304d18cf948eeeb776ea2c52c177b3",
+    "url": "/React-Portfolio/static/media/Attila_Bordan_resume.6b304d18.pdf"
   },
   {
     "revision": "9b3366b530ce7c0e43bbb073a3ba4b55",
@@ -72,6 +72,10 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/javascript-icon.2ae3fc0e.png"
   },
   {
+    "revision": "d776909c437863f86416b35253343857",
+    "url": "/React-Portfolio/static/media/wall.d776909c.jpg"
+  },
+  {
     "revision": "0cdbfd084192a2a859fe89dce56e1348",
     "url": "/React-Portfolio/static/media/github-icon.0cdbfd08.png"
   },
@@ -84,11 +88,7 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/facebook-icon.c94909a9.png"
   },
   {
-    "revision": "d776909c437863f86416b35253343857",
-    "url": "/React-Portfolio/static/media/wall.d776909c.jpg"
-  },
-  {
-    "revision": "f617dca3ac04a54a24369a51affc3fb7",
+    "revision": "2828c8a495801872820b59bb7499b4b0",
     "url": "/React-Portfolio/index.html"
   }
 ];
