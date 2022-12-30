@@ -116,7 +116,7 @@
 }
 .contactPage {
     padding: 37px;
-    color: beige;
+    color: --var(border-colour);
 }
 
 .box {

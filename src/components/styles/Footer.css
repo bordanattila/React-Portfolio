@@ -1,6 +1,6 @@
-a {
+/* a {
     padding: 5px;
-}
+} */
 
 .footer {
     text-align: center;
@@ -15,10 +15,55 @@ span {
     color: white;
 }
 
-.contact_img {
-    height: 40px;
-    width: 40px;
-    color: white;
-    padding: 1px;
-    border: white 1px solid;
+.footerList {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+.footerList li {
+    position: relative;
+    margin: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+.footerList li .footerIcon {
+    text-decoration: none;
+}
+
+.footerList li .footerIcon .fa-brands {    
+    font-size: 3rem;
+    color: rgb(133, 128, 128);
+}
+
+.footerList li::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.footerList li:nth-child(1):before {
+    content: "\f09b";
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.footerList li:nth-child(2):before {
+    content: "\f08c";
+    color: #007bb5;
+    border-bottom: 4px solid #007bb5;
+}
+
+.footerList li:nth-child(3):before {
+    content: "\f39e";
+    color: #3B5998;
+    border-bottom: 4px solid #3B5998;
+}
+
+.footerList li:hover::before {
+    height: 110%;
 }

@@ -3,12 +3,56 @@ import "../styles/ContactMe.css";
 import emailjs from '@emailjs/browser';
 
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
-import Button from '@mui/material/Button';
+import { Box, TextField, Button, Snackbar } from '@mui/material/';
+import MuiAlert from "@mui/material/Alert";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 function ContactMe() {
+
+    // Create state for sncakbar
+    const [state, setState] = React.useState({
+        openagain: false,
+        vertical: 'top',
+        horizontal: 'left',
+    });
+    const { vertical, horizontal, openagain } = state;
+
+    const [open, setOpen] = React.useState(false);
+    const handleClick = () => {
+        setOpen(true);
+
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setOpen(false);
+    };
+
+    // Button for snackbar
+    const button = (
+        <React.Fragment>
+            <Button variant="contained" className="sendbtn" 
+
+                sx={{
+                    minWidth: "10px",
+                    maxWidth: "150px",
+                    padding: "6px",
+                }}
+                onClick={() => {
+                    submitHandler();
+                                
+                }}
+            > Send
+            </Button>
+        </React.Fragment>
+    )
+
     // Create state variables for the form and set their initial values to empty string
     const [visitorName, setVisitorName] = useState("");
     const [email, setEmail] = useState("");
@@ -46,11 +90,19 @@ function ContactMe() {
             }, (error) => {
                 console.log(error.text);
             });
+            handleClick({
+                vertical: 'top',
+                horizontal: 'left',
+            }); 
+            setVisitorName("")
+            setEmail("")
+            setSubject("")
+            setMessage("");
     };
 
     // Check to see if all required fields are filled out
     const submitHandler = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         console.log("sent")
         if (visitorName === "") {
             setAlertMessage("Name is a required field");
@@ -112,7 +164,13 @@ function ContactMe() {
                             InputLabelProps={{ style: { color: 'beige' } }}
                             onChange={inputHandler}
                         />
-                        <Button className="sendbtn" variant="contained" type="submit" value="Send" onClick={submitHandler}>Send</Button>
+                        {/* <Button className="sendbtn" variant="contained" type="submit" value="Send" onClick={submitHandler}>Send</Button> */}
+                        {button}
+                        <Snackbar open={open} autoHideDuration={3000} onClose={handleClose} anchorOrigin={{ vertical, horizontal }} key={vertical + horizontal}>
+                            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                                Your message has been sent!
+                            </Alert>
+                        </Snackbar>
                         {alertMessage && (
                             <div>
                                 <p className="error-text">{alertMessage}</p>

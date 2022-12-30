@@ -5,12 +5,12 @@ h1 {
 .projectsh1 {
     text-align: center;
     padding: 20px 0;
-    color: white;
+    color: beige;
 }
 
 .project_img {
     width: 400px;
-    height: 320px;
+    height: 270px;
 }
 .project {
     display:flex;
