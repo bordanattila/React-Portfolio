@@ -57,12 +57,14 @@ const projects = [
 
 function Portfolio () {
     return (
-        <div className="col-12-lg col-6-md col-3-sm fullPortfolio">
+        <div className="fullPortfolio">
                 <h1 className="projectsh1">Projects I created</h1>
-              <div className="project justify-content-center">
+              <div className="container ">
+              <div className="row justify-content-around">
             <Project
                 projects={projects}
             ></Project>
+            </div>
         </div>
          </div>
     );

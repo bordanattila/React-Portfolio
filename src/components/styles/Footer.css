@@ -20,6 +20,7 @@ span {
     display: flex;
     list-style-type: none;
 }
+
 .footerList li {
     position: relative;
     margin: 20px;
@@ -52,13 +53,13 @@ span {
     border-bottom: 4px solid #fff;
 }
 
-.footerList li:nth-child(2):before {
+.footerList li:nth-child(3):before {
     content: "\f08c";
     color: #007bb5;
     border-bottom: 4px solid #007bb5;
 }
 
-.footerList li:nth-child(3):before {
+.footerList li:nth-child(5):before {
     content: "\f39e";
     color: #3B5998;
     border-bottom: 4px solid #3B5998;
@@ -67,3 +68,20 @@ span {
 .footerList li:hover::before {
     height: 110%;
 }
+
+@media only screen and (min-width:786px){
+
+    .animated { display: block; }
+    .regular { display: none; }
+    
+  }
+
+@media only screen and (max-width:786px){
+
+    .animated { display: none; }
+    .regular { display: block; }
+    .fa-github { color: #fff;}
+    .fa-linkedin { color: #007bb5;}
+    .fa-brands { font-size: 3rem;}
+    
+  }
