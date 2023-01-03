@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../styles/ContactMe.css";
 import emailjs from '@emailjs/browser';
-
-import { styled } from '@mui/material/styles';
 import { Box, TextField, Button, Snackbar } from '@mui/material/';
 import MuiAlert from "@mui/material/Alert";
 
@@ -14,12 +12,11 @@ function ContactMe() {
 
     // Create state for sncakbar
     const [state, setState] = React.useState({
-        openagain: false,
-        vertical: 'top',
+        vertical: 'bottom',
         horizontal: 'left',
     });
-    const { vertical, horizontal, openagain } = state;
-
+    const { vertical, horizontal } = state;
+  
     const [open, setOpen] = React.useState(false);
     const handleClick = () => {
         setOpen(true);
@@ -37,7 +34,7 @@ function ContactMe() {
     // Button for snackbar
     const button = (
         <React.Fragment>
-            <Button variant="contained" className="sendbtn" 
+            <Button variant="contained" className="sendbtn"
 
                 sx={{
                     minWidth: "10px",
@@ -46,7 +43,6 @@ function ContactMe() {
                 }}
                 onClick={() => {
                     submitHandler();
-                                
                 }}
             > Send
             </Button>
@@ -90,20 +86,19 @@ function ContactMe() {
             }, (error) => {
                 console.log(error.text);
             });
-            handleClick({
-                vertical: 'top',
-                horizontal: 'left',
-            }); 
-            setVisitorName("")
-            setEmail("")
-            setSubject("")
-            setMessage("");
+        handleClick({
+            vertical: 'top',
+            horizontal: 'left',
+        });
+        setVisitorName("")
+        setEmail("")
+        setSubject("")
+        setMessage("");
     };
 
     // Check to see if all required fields are filled out
     const submitHandler = (e) => {
-        // e.preventDefault();
-        console.log("sent")
+        setAlertMessage("");
         if (visitorName === "") {
             setAlertMessage("Name is a required field");
             return;
