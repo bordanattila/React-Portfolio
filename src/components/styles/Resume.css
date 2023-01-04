@@ -51,3 +51,7 @@ p > img {
 .MuiListItemText-primary {
     color: beige;
 }
+
+.stack {
+    margin-top: 200px;
+}

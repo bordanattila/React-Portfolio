@@ -6,6 +6,8 @@
     align-items: center;
     height: 100%;
     justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 115px;
   }
   .deck {
     position: absolute;

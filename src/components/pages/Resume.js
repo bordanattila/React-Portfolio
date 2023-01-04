@@ -183,7 +183,7 @@ const Resume = () => {
                 </Grid>
               </Box>
             </div >
-            <div className="col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-4 col-md-6 col-sm-8 stack">
 
               <div className={styles.container}>
                 <Deck />
