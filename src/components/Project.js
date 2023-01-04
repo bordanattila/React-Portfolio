@@ -9,7 +9,7 @@ function Project(props) {
                 <p className="projectName">{item.projectName}</p>
                 <img className="project_img" src={item.imageSource} alt={"Project"}></img>
                 <p><a href={item.repo} target={"_blank"}> GitHub Repository </a></p>
-                <p><a href={item.deployed} target={"_blank"}> Deployed Application </a></p>
+                <p><a href={item.deployed} target={"_blank"}> View application »</a></p>
             </div>
         // </div>
        

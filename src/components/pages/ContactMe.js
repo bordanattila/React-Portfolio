@@ -159,7 +159,6 @@ function ContactMe() {
                             InputLabelProps={{ style: { color: 'beige' } }}
                             onChange={inputHandler}
                         />
-                        {/* <Button className="sendbtn" variant="contained" type="submit" value="Send" onClick={submitHandler}>Send</Button> */}
                         {button}
                         <Snackbar open={open} autoHideDuration={3000} onClose={handleClose} anchorOrigin={{ vertical, horizontal }} key={vertical + horizontal}>
                             <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
