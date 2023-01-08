@@ -1,13 +1,9 @@
 :root {
     --text_colour: beige;
 }
+
 .navbar {
-    padding: 20px;
-    display: flex;    
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center; 
-    min-height: 7rem;    
+    min-height: 7rem;
 }
 
 .navbar-brand {
@@ -18,7 +14,7 @@
 }
 
 .navbar-nav {
-    align-items: flex-end;    
+    align-items: flex-end;
     padding-right: 10px;
 }
 
@@ -28,9 +24,31 @@
 }
 
 .navbar-toggler {
-     border-color: var(--text_colour) !important;
-     }
+    border-color: var(--text_colour) !important;
+}
 
 .navbar-toggler-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.circular {
+    border-radius: 100%;
+    max-width: 50%;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width:425px) {
+    .navbar-brand {
+        padding-left: 10px;
+    }
+    .circular {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: space-evenly !important;
+    }
 }

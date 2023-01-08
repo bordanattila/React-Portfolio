@@ -52,6 +52,7 @@ p > img {
     color: beige;
 }
 
-.stack {
-    margin-top: 200px;
+.resume_img {
+    padding: 10px 0;
+    max-width: 100%;
 }

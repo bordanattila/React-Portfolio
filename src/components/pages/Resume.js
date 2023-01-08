@@ -190,7 +190,7 @@ const Resume = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-8">
-              <img className="profile_img " src={Temp}></img>
+              <img className="resume_img" src={Temp}></img>
             </div>
           </div>
         </div>
