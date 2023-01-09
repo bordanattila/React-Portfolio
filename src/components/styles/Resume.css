@@ -23,10 +23,6 @@ p > img {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.button {
-    margin-bottom: 20px !important;
-}
-
 .MuiSvgIcon-root {
     fill: beige !important;
     margin-top: 20px !important;
@@ -56,3 +52,7 @@ p > img {
     padding: 10px 0;
     max-width: 100%;
 }
+
+@media only screen and (max-width:425px){
+    stack { margin-top: 50px; }
+  }

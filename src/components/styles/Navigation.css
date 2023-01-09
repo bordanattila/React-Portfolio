@@ -33,6 +33,7 @@
 
 .circular {
     border-radius: 100%;
+    
     max-width: 50%;
     margin-bottom: 15px;
 }
@@ -40,9 +41,15 @@
 @media only screen and (max-width:425px) {
     .navbar-brand {
         padding-left: 10px;
-    }
+    }    
+}
+
+@media screen and (max-width:786px) {
     .circular {
-        display: none;
+        padding-left: 50px;
+    }
+    .navbar-toggler {
+        margin-right: 50px !important;
     }
 }
 

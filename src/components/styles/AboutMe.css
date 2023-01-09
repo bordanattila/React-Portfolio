@@ -29,18 +29,6 @@ p {
     text-align: center;
 }
 
-.computer {
-    padding-top: 10px;
-    padding-bottom: 55px;
-    max-width: 15%;
-    max-height: 15%;
-}
-
-.package {
-    max-width: 25%;
-    max-height: 25%;
-}
-
 .bottom {
     margin-bottom: 0;
     padding-bottom: 5px;

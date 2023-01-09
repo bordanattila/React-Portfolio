@@ -1,17 +1,17 @@
 .footer {
     text-align: center;
     min-height: 7rem;
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 span {
     color: white;
 }
 
- .footerList {
+.footerList {
     position: relative;
     display: flex;
     list-style-type: none;
@@ -24,21 +24,23 @@ span {
     cursor: pointer;
 }
 
-.footerList li .github {    
+.footerList li .github {
     font-size: 3rem;
     color: #fff;
 }
 
-.footerList li .linkedin {    
+.footerList li .linkedin {
     font-size: 3rem;
     color: #007bb5;
 }
 
-.footerList li .facebook {    
+.footerList li .facebook {
     font-size: 3rem;
     color: #3B5998;
 }
 
-  @media only screen and (max-width:425px){
-    span { padding-top: 10px; }
-  }
+@media only screen and (max-width:425px) {
+    span {
+        padding-top: 10px;
+    }
+}

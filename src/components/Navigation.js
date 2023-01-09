@@ -5,12 +5,9 @@ import Avatar from "./images/avatar.png";
 
 function NavigationBar({ currentPage, handlePageChange }) {
   return (
+    <div className="div">
+
     <Navbar collapseOnSelect expand="lg"  >
-      <div>
-        <Navbar.Brand >
-          Attila Bordán
-        </Navbar.Brand>
-      </div>
       <div>
         <Navbar.Brand href="#AboutMe"
         onClick={() => handlePageChange("AboutMe")}
@@ -18,11 +15,9 @@ function NavigationBar({ currentPage, handlePageChange }) {
         >
           <img
             src={Avatar}
-            // width="80"
-            // height="80"
             className="circular"
             alt="avatar"
-          />
+            />
         </Navbar.Brand>
       </div>
       <div>
@@ -32,23 +27,24 @@ function NavigationBar({ currentPage, handlePageChange }) {
             <Nav.Link href="#AboutMe"
               onClick={() => handlePageChange("AboutMe")}
               className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}
-            >About me</Nav.Link>
+              >About me</Nav.Link>
             <Nav.Link href="#Portfolio"
               onClick={() => handlePageChange("Portfolio")}
               className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-            >Portfolio</Nav.Link>
+              >Portfolio</Nav.Link>
             <Nav.Link href="#ContactMe"
               onClick={() => handlePageChange("ContactMe")}
               className={currentPage === "ContactMe" ? "nav-link active" : "nav-link"}
-            >Contact me</Nav.Link>
+              >Contact me</Nav.Link>
             <Nav.Link href="#Resume"
               onClick={() => handlePageChange("Resume")}
               className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
-            >Resume</Nav.Link>
+              >Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
     </Navbar>
+              </div>
   );
 }
 
