@@ -8,7 +8,7 @@ function NavigationBar({ currentPage, handlePageChange }) {
     <div className="div">
 
     <Navbar collapseOnSelect expand="lg"  >
-      <div>
+      <div className="avatar">
         <Navbar.Brand href="#AboutMe"
         onClick={() => handlePageChange("AboutMe")}
         className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}

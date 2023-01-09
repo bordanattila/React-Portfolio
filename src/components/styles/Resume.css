@@ -54,5 +54,5 @@ p > img {
 }
 
 @media only screen and (max-width:425px){
-    stack { margin-top: 50px; }
+    stack { margin-top: 30px !important; }
   }

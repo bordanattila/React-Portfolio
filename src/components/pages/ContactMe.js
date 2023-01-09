@@ -3,6 +3,7 @@ import "../styles/ContactMe.css";
 import emailjs from '@emailjs/browser';
 import { Box, TextField, Button, Snackbar } from '@mui/material/';
 import MuiAlert from "@mui/material/Alert";
+import {AccountCircle, Email, Subject, Message } from "@mui/icons-material/";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -16,7 +17,7 @@ function ContactMe() {
         horizontal: 'left',
     });
     const { vertical, horizontal } = state;
-  
+
     const [open, setOpen] = React.useState(false);
     const handleClick = () => {
         setOpen(true);
@@ -35,7 +36,6 @@ function ContactMe() {
     const button = (
         <React.Fragment>
             <Button variant="contained" className="sendbtn"
-
                 sx={{
                     minWidth: "10px",
                     maxWidth: "150px",
@@ -142,23 +142,35 @@ function ContactMe() {
                 >
                     <form ref={form} onSubmit={sendEmail}
                     >
-                        <TextField
-                            onChange={inputHandler}
-                            label="Your name" id="custom-css-outlined-input" name="visitorName" value={visitorName}
-                            InputLabelProps={{ style: { color: 'beige' } }}
-                        />
-                        <TextField label="Your email" id="custom-css-outlined-input" type="email" name="email" value={email}
-                            InputLabelProps={{ style: { color: 'beige' } }}
-                            onChange={inputHandler}
-                        />
-                        <TextField label="Email subject" id="custom-css-outlined-input" name="subject" value={subject}
-                            InputLabelProps={{ style: { color: 'beige' } }}
-                            onChange={inputHandler}
-                        />
-                        <TextField label="Your message" id="custom-css-outlined-input" name="message" value={message} multiline rows={8}
-                            InputLabelProps={{ style: { color: 'beige' } }}
-                            onChange={inputHandler}
-                        />
+                        <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+                            <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+                            <TextField
+                                onChange={inputHandler}
+                                label="Your name" id="custom-css-outlined-input" name="visitorName" value={visitorName}
+                                InputLabelProps={{ style: { color: 'beige' }, }}
+                            />
+                        </Box>
+                        <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+                            <Email sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+                            <TextField label="Your email" id="custom-css-outlined-input" type="email" name="email" value={email}
+                                InputLabelProps={{ style: { color: 'beige' } }}
+                                onChange={inputHandler}
+                            />
+                        </Box>
+                        <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+                            <Subject sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+                            <TextField label="Email subject" id="custom-css-outlined-input" name="subject" value={subject}
+                                InputLabelProps={{ style: { color: 'beige' } }}
+                                onChange={inputHandler}
+                            />
+                        </Box>
+                        <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+                            <Message className="message" sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+                            <TextField label="Your message" id="custom-css-outlined-input" name="message" value={message} multiline rows={8}
+                                InputLabelProps={{ style: { color: 'beige' } }}
+                                onChange={inputHandler}
+                            />
+                        </Box>
                         {button}
                         <Snackbar open={open} autoHideDuration={3000} onClose={handleClose} anchorOrigin={{ vertical, horizontal }} key={vertical + horizontal}>
                             <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>

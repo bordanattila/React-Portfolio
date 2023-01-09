@@ -38,15 +38,15 @@
     margin-bottom: 15px;
 }
 
-@media only screen and (max-width:425px) {
-    .navbar-brand {
-        padding-left: 10px;
+@media only screen and (max-width:375px) {
+    .avatar {
+        max-width: 240px;
     }    
 }
 
 @media screen and (max-width:786px) {
     .circular {
-        padding-left: 50px;
+        margin-left: 50px;
     }
     .navbar-toggler {
         margin-right: 50px !important;
