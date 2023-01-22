@@ -12,6 +12,7 @@ p {
 
 .profile_img {
     padding: 10px 0;
+    max-width: 33% !important;
 }
 
 .aboutMeText {
@@ -61,5 +62,8 @@ p {
 @media screen and (max-width: 768px) {
     .ui {
         flex-direction: row;
+    }
+    .profile_img {
+        max-width: 75% !important;
     }
 }

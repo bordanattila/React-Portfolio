@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePicture from "../images/profilepicture.jpg";
+import ProfilePicture from "../images/aboutme_img.jpg";
 import "../styles/AboutMe.css"
 
 export default function AboutMe() {
@@ -24,7 +24,7 @@ export default function AboutMe() {
                     <i title='Github' className="devicon-github-original dev"></i>
                     <i title='Python' className="devicon-python-plain dev"></i>
                 </div>
-                <img className="profile_img col-lg-6 col-md-8" src={ProfilePicture} alt={"Profile"}></img>
+                <img className="profile_img col-lg-6 col-md-8" src={ProfilePicture} alt={"Profile picture"}></img>
             </div>
             <div className="aboutMeText container text-center">
                 <div className="bio row justify-content-center">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import resumePDF from "../assets/Attila_Bordan_resume.pdf";
+import ResumeImage from "../images/resume_img.jpg";
 import "../styles/Resume.css";
 import Python from "../images/python-icon.png";
 import HTML from "../images/html.png";
@@ -9,12 +10,8 @@ import Jquery from "../images/jquery-icon.png";
 import MySql from "../images/mysql-icon.png";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import { Box, ListItem, ListItemText, Grid } from '@mui/material';
-import Temp from "../images/temp.jpg";
-
-
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
-// import styles from '../styles/Resume.css'
 import styles from '../../styles.module.css'
 const cards = [
   Python, MySql, Jquery, JS, CSS, HTML,
@@ -190,7 +187,7 @@ const Resume = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-8">
-              <img className="resume_img" src={Temp}></img>
+              <img className="resume_img" src={ResumeImage}></img>
             </div>
           </div>
         </div>
