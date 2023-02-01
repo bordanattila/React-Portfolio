@@ -29,8 +29,8 @@ export default function AboutMe() {
             <div className="aboutMeText container text-center">
                 <div className="bio row justify-content-center">
                     <div className="col-md-auto">
-                        <p >Recently earned a certificate in full stack development form the University of Minnesota and developed skills in
-                            HTML, CSS, JavaScript, Bootstrap, MERN, Material UI, Handlebars, MySQL, jQuery, Apollo, and a bit of Python. </p>
+                        <p >Earned a certificate in full stack development form the University of Minnesota and developed skills in
+                            HTML, CSS, JavaScript, Bootstrap, MERN, Material UI, Handlebars, MySQL, jQuery, Apollo, and a bit of Python and Motoku. </p>
                         <p >Having an appetite for continuous learning and problem solving. I enjoy collaborating and connecting with co-workers. <br></br>
                             Passionate about building applications that assist people to make their lives easier. </p>
                         <p className="bottom">Looking to bring my attention to detail and technical skills to a company to grow and become a valuable asset.</p>

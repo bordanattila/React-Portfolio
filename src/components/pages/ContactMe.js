@@ -3,7 +3,7 @@ import "../styles/ContactMe.css";
 import emailjs from '@emailjs/browser';
 import { Box, TextField, Button, Snackbar } from '@mui/material/';
 import MuiAlert from "@mui/material/Alert";
-import {AccountCircle, Email, Subject, Message } from "@mui/icons-material/";
+import { AccountCircle, Email, Subject, Message } from "@mui/icons-material/";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -131,8 +131,7 @@ function ContactMe() {
     return (
         <>
             <div className="contactMe">
-                <h2 className="contactmeh2">If you would like to contact me, please fill out the form below and send me a message</h2>
-
+                <h2 className="contactmeh2">If you would like to contact me, you can do so by sending an email to <br></br><a href="mailto:bordanattila007@gmail.com">bordanattila007@gmail.com</a> from your default account <br></br> or you can fill out the form below</h2>
                 <Box
                     className="box"
                     noValidate

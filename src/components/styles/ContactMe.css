@@ -23,6 +23,7 @@
 
 .contactmeh2 {
     padding: 20px 0;
+    margin-top: 20px;
     font-family: 'Caveat', cursive, "Comic Sans MS", "Comic Sans", cursive;
     color: beige;
     text-align: center;
@@ -58,6 +59,10 @@
     color: beige !important;
 }
 
+.MuiOutlinedInput-notchedOutline {
+    border-color: beige !important;
+}
+
 .MuiSvgIcon-root {
     margin-bottom: 32px !important;
     margin-left: 14px !important;
@@ -77,11 +82,6 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-.MuiTextField-root {
-    width: '35ch'
-}
-@media screen and (max-width:375px) {
-    .MuiTextField-root {
-        width: '28ch' !important
-    }    
+h2 > a {
+    color: beige;
 }
