@@ -129,18 +129,17 @@ function ContactMe() {
     };
 
     return (
-        <>
-            <div className="contactMe">
+            <div className="contactMe container">
                 <h2 className="contactmeh2">If you would like to contact me, you can do so by sending an email to <br></br><a href="mailto:bordanattila007@gmail.com">bordanattila007@gmail.com</a> from your default account <br></br> or you can fill out the form below</h2>
+                <div className="formArea">
                 <Box
-                    className="box"
+                    className="box container"
                     noValidate
                     sx={{
                         '& .MuiTextField-root': { m: 2, width: '35ch', display: "flex !important", },
                     }}
                 >
-                    <form ref={form} onSubmit={sendEmail}
-                    >
+                    <form ref={form} onSubmit={sendEmail}>
                         <Box sx={{ display: "flex", alignItems: "flex-end" }}>
                             <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
                             <TextField
@@ -183,8 +182,8 @@ function ContactMe() {
                         )}
                     </form>
                 </Box>
+                </div>
             </div>
-        </>
     );
 
 

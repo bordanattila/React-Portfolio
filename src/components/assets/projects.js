@@ -38,10 +38,10 @@ const projects = [
     },
     {
         imageSource: Note_Taker,
-        projectName: "Note Taker",
-        description: "This simple note taking application runs in the browser that eliminates the installation of the same app on various devices to access the same notes. The app is built with Express and UUID.",
-        repo: "http://github.com/bordanattila/Note_taker",
-        deployed: "http://bordanattila.github.io/Note_taker"
+        projectName: "Decentralised Note Taker",
+        description: "This simple note taking application with a React fronted. The application was built with Motoko for the backend for the Internet Computer. ",
+        repo: "https://github.com/bordanattila/Decentralised-Note-Taker",
+        deployed: "Not deployed"
     },
     {
         imageSource: Work_Day_Scheduler,
