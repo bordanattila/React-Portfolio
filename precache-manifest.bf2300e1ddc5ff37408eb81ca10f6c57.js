@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c69b8bd6420e2dfe6a47",
-    "url": "/React-Portfolio/static/css/main.e622bd9a.chunk.css"
+    "revision": "f769c101d1261a3805cd",
+    "url": "/React-Portfolio/static/css/main.5e3262ae.chunk.css"
   },
   {
-    "revision": "c69b8bd6420e2dfe6a47",
-    "url": "/React-Portfolio/static/js/main.7e03f0aa.chunk.js"
+    "revision": "f769c101d1261a3805cd",
+    "url": "/React-Portfolio/static/js/main.86931aad.chunk.js"
   },
   {
     "revision": "0e24f73b60490bff0c24",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/egaugnal.495136a6.png"
   },
   {
-    "revision": "77f2c012bb4fe3ad846b504c17a8c30e",
-    "url": "/React-Portfolio/static/media/noteTaker.77f2c012.png"
+    "revision": "60a3f837208939a29d5e2afeb999f31d",
+    "url": "/React-Portfolio/static/media/noteTaker.60a3f837.png"
   },
   {
     "revision": "9848c553694c5f3e12aeb586e71abf63",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/prima-materia-home.d252fd9e.jpg"
   },
   {
-    "revision": "5536ee308d6120f42ecadc96a71f899f",
-    "url": "/React-Portfolio/static/media/Attila_Bordan_resume.5536ee30.pdf"
+    "revision": "5f44a9c83375f398a5e001ec8717e00b",
+    "url": "/React-Portfolio/static/media/Attila_Bordan_resume.5f44a9c8.pdf"
   },
   {
     "revision": "cff9335d871a1031a12a17580cd3d074",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/wall.d776909c.jpg"
   },
   {
-    "revision": "b9decaf6915fe64feb21578606b8c9ca",
+    "revision": "839ceefea69588fc9b4e899a41f961c6",
     "url": "/React-Portfolio/index.html"
   }
 ];
